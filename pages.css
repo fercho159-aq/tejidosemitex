@@ -326,9 +326,11 @@
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* Fill the entire space */
+    object-fit: contain;
+    /* Show full image without cropping */
     transition: transform 0.4s ease;
+    background-color: #8B7355;
+    /* Brown background to fill empty space */
 }
 
 .carousel-item:hover {

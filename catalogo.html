@@ -114,12 +114,58 @@
                         <p class="product-type__desc">Textura tipo rib para sudaderas y chamarras.</p>
                     </div>
                 </div>
-                <div class="gallery-placeholder">
-                    <div class="gallery-item"><i class="fas fa-image"></i></div>
-                    <div class="gallery-item"><i class="fas fa-image"></i></div>
-                    <div class="gallery-item"><i class="fas fa-image"></i></div>
-                    <div class="gallery-item"><i class="fas fa-image"></i></div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-btn carousel-btn--prev" aria-label="Anterior"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <li class="carousel-item"><img src="img/cuellos/cuello-01.jpg" alt="Cuello tejido diseño 1"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-02.jpg" alt="Cuello tejido diseño 2"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-03.jpg" alt="Cuello tejido diseño 3"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-04.jpg" alt="Cuello tejido diseño 4"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-05.jpg" alt="Cuello tejido diseño 5"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-06.jpg" alt="Cuello tejido diseño 6"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-07.jpg" alt="Cuello tejido diseño 7"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-08.jpg" alt="Cuello tejido diseño 8"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-09.jpg" alt="Cuello tejido diseño 9"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-10.jpg" alt="Cuello tejido diseño 10"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-11.jpg" alt="Cuello tejido diseño 11"
+                                    loading="lazy"></li>
+                            <li class="carousel-item"><img src="img/cuellos/cuello-12.jpg" alt="Cuello tejido diseño 12"
+                                    loading="lazy"></li>
+                        </ul>
+                    </div>
+                    <button class="carousel-btn carousel-btn--next" aria-label="Siguiente"><i
+                            class="fas fa-chevron-right"></i></button>
                 </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const container = document.querySelector('.carousel-track-container');
+                        const prevBtn = document.querySelector('.carousel-btn--prev');
+                        const nextBtn = document.querySelector('.carousel-btn--next');
+
+                        // Scroll amount based on item width + gap
+                        const scrollAmount = 300;
+
+                        nextBtn.addEventListener('click', () => {
+                            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                        });
+
+                        prevBtn.addEventListener('click', () => {
+                            container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                        });
+                    });
+                </script>
             </div>
 
             <!-- Pretinas -->
@@ -270,9 +316,7 @@
                     </div>
                     <p class="footer__description">Empresa 100% mexicana con 22 años de experiencia en tejidos de
                         calidad.</p>
-                    <div class="footer__social"><a href="#" class="footer__social-link"><i
-                                class="fab fa-facebook-f"></i></a><a href="#" class="footer__social-link"><i
-                                class="fab fa-instagram"></i></a><a href="#" class="footer__social-link"><i
+                    <div class="footer__social"><a href="https://wa.me/5215519132003" class="footer__social-link"><i
                                 class="fab fa-whatsapp"></i></a></div>
                 </div>
                 <div>

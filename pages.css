@@ -315,8 +315,8 @@
 .carousel-item {
     flex: 0 0 320px;
     height: 400px;
-    background: #8B7355;
-    /* Brown background matching collar photos */
+    background: var(--color-white);
+    /* White background */
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -329,8 +329,6 @@
     object-fit: contain;
     /* Show full image without cropping */
     transition: transform 0.4s ease;
-    background-color: #8B7355;
-    /* Brown background to fill empty space */
 }
 
 .carousel-item:hover {

@@ -683,6 +683,16 @@ p {
     padding-bottom: var(--spacing-12);
   }
 
+  .hero__grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .hero__video {
+    order: -1;
+    max-width: 100%;
+  }
+
   .hero__title {
     font-size: clamp(1.75rem, 7vw, 2.5rem);
   }
